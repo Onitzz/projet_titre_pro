@@ -1,0 +1,21 @@
+{
+  "name": "Onitzz/projetTitrePro",
+  "authors": [
+    "Onitzz <benjamin.soufflet.info@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "UNLICENCED",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
+

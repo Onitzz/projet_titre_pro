@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="heightCentPourCent">
+  <head>
+    <meta charset="utf-8">
+    <title>Gestion de tâche</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalise.css">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body class="heightCentPourCent">
+    <div class="container-fluid heightCentPourCent">
+      <div class="row heightCentPourCent">
+        <div class="col-sm-3 marge-gauche heightCentPourCent">
+          <ul>
+            <li><a href="ajoutTache.html">Ajouter une tâche</a></li>
+            <li><a href="ajoutImportance.html">Ajouter un niveau d'importance</a></li>
+            <li><a href="filtre.html">Filtrer</a></li>
+            <li><a href="tachesAccomplies.html">Liste des tâches accomplies</a></li>
+          </ul>
+          <hr />
+          <h2>Ajout d'importance</h2>
+          <form action="#" method="post">
+            <div class="form">
+              <input type="text" name="nom" value="" placeholder="Nom">
+            </div>
+
+            <div class="form">
+              <input type="number" name="poid" value="" placeholder="0">
+            </div>
+
+            <input type="submit" name="" value="Ajouter">
+
+          </form>
+          <div id="contentImportance">
+            <table id="tableImportance">
+              <tr>
+                <th>Nom</th>
+                <th>Poid</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Très urgent</td>
+                <td>200</td>
+                <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+              </tr>
+              <tr>
+                <td>Assez urgent</td>
+                <td>150</td>
+                <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+              </tr>
+              <tr>
+                <td>Pour Marcus</td>
+                <td>100</td>
+                <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+              </tr>
+              <tr>
+                <td>Aux plus vite</td>
+                <td>120</td>
+                <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+
+        <div class="col-sm-9 marge-droite heightCentPourCent">
+          <table>
+            <caption>Liste des tâches non accomplies</caption>
+            <tr>
+              <th class="nom">Nom</th>
+              <th class="details">Détails</th>
+              <th class="dateLimite">Date Limite</th>
+              <th class="importance">Importance</th>
+              <th>V</th>
+              <th class="option"></th>
+            </tr>
+            <tr class="marque">
+              <td>Foo</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+              <td>05/04/2017</td>
+              <td>Très urgent</td>
+              <td><input class="check" type="checkbox"></td>
+              <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+            </tr>
+            <tr>
+              <td>bar</td>
+              <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</td>
+              <td>08/04/2017</td>
+              <td>Assez urgent</td>
+              <td><input class="check" type="checkbox"></td>
+              <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+            </tr>
+            <tr class="marque">
+              <td>baz</td>
+              <td>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </td>
+              <td>15/05/2017</td>
+              <td>Pour Marcus</td>
+              <td><input class="check" type="checkbox"></td>
+              <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+            </tr>
+            <tr>
+              <td>faz</td>
+              <td> In felis velit, maximus sed nibh nec, blandit elementum orci. Morbi eget dapibus leo. Cras sit amet massa accumsan, tempor nibh sit amet, egestas libero. Mauris mollis ante tellus, venenatis cursus enim varius vitae.</td>
+              <td>25/05/2017</td>
+              <td>Aux plus vite</td>
+              <td><input class="check" type="checkbox"></td>
+              <td><a class="modif" href="#">...</a><a class="sup" href="#">X</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

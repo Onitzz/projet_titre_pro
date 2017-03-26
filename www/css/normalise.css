@@ -1,0 +1,110 @@
+.heightCentPourCent{
+  height: 100%;
+}
+body{
+  overflow: hidden;
+}
+.marge-gauche{
+  background-color: rgb(22, 22, 22);
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+a{
+  color: white;
+  font-size: 15px;
+}
+
+hr{
+  color:white;
+  border: 1px solid white;
+}
+form{
+  background-color: rgb(22, 22, 22);
+}
+
+input, textarea, select{
+  color: white;
+  margin-top:20px;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  border: 1px solid rgb(0, 0, 0);
+}
+textarea{
+  height:150px;
+}
+
+.form{
+  padding:0;
+}
+
+#contentImportance{
+  margin: 20px 0;
+  height: calc(100% - 360px);
+  overflow-y: scroll;
+}
+
+#tableImportance{
+  width:100%;
+  margin: 0;
+  color: white;
+}
+
+.filtre input{
+  width: 30px;
+}
+
+#rechercher input{
+  width: 100%;
+}
+
+
+.marge-droite{
+  background-color: rgb(255, 255, 255);
+  overflow: scroll;;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 5px;
+  text-align: center;
+}
+
+table{
+  width: 90%;
+  margin: 10px 5%;
+}
+
+.nom{
+  width: 15%;
+}
+.details{
+  width: 40%;
+
+}
+.dateLimite{
+  width: 15%;
+
+}
+.importance{
+  width: 15%;
+
+}
+.option{
+  width: 10%;
+}
+.marque{
+  background-color: rgb(194, 196, 192)
+}
+.sup,.modif{
+  margin: 0 5px;
+  color: red;
+}
